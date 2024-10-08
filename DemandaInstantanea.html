@@ -7,6 +7,8 @@
 	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
 	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript" src="./custom.js"></script>
+
 </head>
 
 <body>
@@ -227,6 +229,21 @@
 											<input type="checkbox" id="Divulgacao" name="Divulgacao">
 											<label for="Divulgacao">Material de Divulgação ㅤ|</label>
 										</div>
+										<br>
+									</div>
+								</div>
+								<div class="form-group row">
+									<div class="col-md-6">
+										<div id="campo-divulgacao" style="display: none;">
+											<label for="campoDivulgacao">Listar Materiais de Divulgação:</label>
+											<input type="text" class="form-control" name="campoDivulgacao" id="campoDivulgacao" placeholder="Informe os detalhes">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div id="campo-apoio" style="display: none;">
+											<label for="campoApoio">Listar Materiais de Apoio:</label>
+											<input type="text" class="form-control" name="campoApoio" id="campoApoio" placeholder="Informe os detalhes do material de apoio">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -241,7 +258,7 @@
 											</lord-icon>
 											Observação:
 										</h3>
-										<p class="card-text">Anexar quais materiais de divulgação e apoio serão necessários para a solução, caso vá ser utilizado. </p>
+										<p class="card-text">Anexar arquivos que serão necessários para a solução, caso vá ser utilizado. </p>
 										<ul>
 											</div>
 										</ul>
@@ -256,5 +273,4 @@
 		</form>
 	</div>
 </body>
-
 </html>
