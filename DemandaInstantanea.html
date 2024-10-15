@@ -1,5 +1,4 @@
 <html>
-
 <head>
 	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css" />
 	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
@@ -8,7 +7,6 @@
 	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="./style.css">
 	<script type="text/javascript" src="./custom.js"></script>
-
 </head>
 
 <body>
@@ -72,7 +70,7 @@
 				</div>
 			</div>
 
-			<!-- Fim do Painel -->
+			<!-- Fim do Painel do Requisitante -->
 
 			<!-- Painel da Solução -->
 
@@ -174,6 +172,10 @@
 						</div>
 					</div>
 
+					<!-- Fim do Painel da Solução -->
+
+					<!-- Painel Materiais para a Solução -->
+
 					<div class="panel panel-default">
 						<div class="panel-heading" id="painel_mat">
 							<h3 class="panel-title">Materiais para a Solução</h3>
@@ -236,13 +238,15 @@
 									<div class="col-md-6">
 										<div id="campo-divulgacao" style="display: none;">
 											<label for="campoDivulgacao">Listar Materiais de Divulgação:</label>
-											<input type="text" class="form-control" name="campoDivulgacao" id="campoDivulgacao" placeholder="Informe os detalhes">
+											<input type="text" class="form-control" name="campoDivulgacao"
+												id="campoDivulgacao" placeholder="Informe os detalhes">
 										</div>
 									</div>
 									<div class="col-md-6">
 										<div id="campo-apoio" style="display: none;">
 											<label for="campoApoio">Listar Materiais de Apoio:</label>
-											<input type="text" class="form-control" name="campoApoio" id="campoApoio" placeholder="Informe os detalhes do material de apoio">
+											<input type="text" class="form-control" name="campoApoio" id="campoApoio"
+												placeholder="Informe os detalhes do material de apoio">
 										</div>
 									</div>
 								</div>
@@ -258,19 +262,74 @@
 											</lord-icon>
 											Observação:
 										</h3>
-										<p class="card-text">Anexar arquivos que serão necessários para a solução, caso vá ser utilizado. </p>
+										<p class="card-text"><strong>1:</strong>Anexar arquivos que serão necessários para a solução, caso
+											vá ser utilizado. </p>
+										<p class="card-text"><strong>2:</strong>Fazer o anexo de todos os EQUIPAMENTOS e MATERIAIS destinados para a utilização da solução, atentar-se para a quantidade de participantes e materiais necessários.</p>	
 										<ul>
-											</div>
-										</ul>
 									</div>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			<!-- Fim do Painel Materiais para a Solução -->
 
-		</form>
+			<div class="panel panel-default">
+				<div class="panel-heading" id="painel_perf">
+					<h3 class="panel-title">Perfil do Facilitador</h3>
+				</div>
+
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-md-3">
+							<label for="formacao">Formação e Experiência:</label>
+							<textarea class="form-control" rows="5" name="formacao" id="formacao"></textarea>
+						</div>
+
+						<div class="col-md-3">
+							<label for="conhecimento">Conhecimentos Necessários:</label>
+							<textarea class="form-control" rows="5" name="conhecimento" id="conhecimento"></textarea>
+						</div>
+
+						<div class="col-md-3">
+							<label for="habilidade">Habilidades e Atitudes Desejáveis:</label>
+							<textarea class="form-control" rows="5" name="habilidade" id="habilidade"></textarea>
+						</div>
+
+						<div class="col-md-3">
+							<label for="facilita">Experiência em Facilitação Desejada:</label>
+							<textarea class="form-control" rows="5" name="facilita" id="facilita"></textarea>
+						</div>
+					</div>
+
+					<div class="form-group row">
+						<div class="col-md-5">
+							<label for="areaGSF">Área de conhecimento do SGF recomendada:</label>
+							<input type="text" class="form-control" name="areaGSF" id="areaGSF">
+						</div>
+
+						<div class="col-md-5">
+							<label for="subareaSGF">Subárea de conhecimento do SGF recomendada:</label>
+							<input type="text" class="form-control" name="subareaSGF" id="subareaSGF">
+						</div>
+
+						<div class="col-md-2">
+							<label for="habilitar">Habilitar em:</label>
+							<select class="form-control" name="habilitar" id="habilitar">
+								<option value="" selected disabled>Selecione uma Opção</option>
+								<option value="instrutoria">Instrutoria</option>
+								<option value="consultoria">Consultoria</option>
+								<option value="ambos">Ambos</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</form>
 	</div>
 </body>
 </html>

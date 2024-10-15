@@ -18,11 +18,7 @@
     color: #f0f0f0;
 }
 
-.hidden {
-    display: none;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.visible {
-    opacity: 1;
+#painel_perf {
+    background-color: #0070ba;
+    color: #f0f0f0;
 }
