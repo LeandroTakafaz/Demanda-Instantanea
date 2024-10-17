@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
 	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="./style.css">
-	<script type="text/javascript" src="./custom.js"></script>
+
 </head>
 
 <body>
@@ -186,16 +186,16 @@
 								<div class="form-group row">
 									<div class="col-md-12">
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Eventos" name="Eventos">
-											<label for="Eventos">Ficha técnica do produto |</label>
+											<input type="checkbox" id="Ficha" name="Ficha">
+											<label for="Ficha">Ficha técnica do produto |</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Coffee" name="Coffee">
-											<label for="Coffee">Argumento de vendas |</label>
+											<input type="checkbox" id="Vendas" name="Vendas">
+											<label for="Vendas">Argumento de vendas |</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Logo" name="Logo">
-											<label for="Logo">Livro do participante ㅤㅤ|</label>
+											<input type="checkbox" id="Livro" name="Livro">
+											<label for="Livro">Livro do participante ㅤㅤ|</label>
 										</div>
 										<div class="checkbox-inline">
 											<input type="checkbox" id="Apoio" name="Apoio">
@@ -203,47 +203,47 @@
 										</div>
 										<br>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Jornada" name="Jornada">
-											<label for="Jornada">Vídeo de apresentação ㅤ|</label>
+											<input type="checkbox" id="Video" name="Video">
+											<label for="Video">Vídeo de apresentação ㅤ|</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Estrategia" name="Estrategia">
-											<label for="Estrategia">Manual de orientação |</label>
+											<input type="checkbox" id="Manual" name="Manual">
+											<label for="Manual">Manual de orientação |</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Imprensa" name="Imprensa">
-											<label for="Imprensa">Arquivo com Capas ㅤㅤㅤ|</label>
+											<input type="checkbox" id="Arquivo" name="Arquivo">
+											<label for="Arquivo">Arquivo com Capas ㅤㅤㅤ|</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Cobertura" name="Cobertura">
-											<label for="Cobertura">Slides</label>
+											<input type="checkbox" id="Slides" name="Slides">
+											<label for="Slides">Slides</label>
 										</div>
 										<br>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Grafica" name="Grafica">
-											<label for="Grafica">Plano de aplicação ㅤㅤ  |</label>
+											<input type="checkbox" id="Plano" name="Plano">
+											<label for="Plano">Plano de aplicação ㅤㅤ  |</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Outros" name="Outros">
-											<label for="Outros">Cessão de direitos ㅤㅤ|</label>
+											<input type="checkbox" id="Cessao" name="Cessao">
+											<label for="Cessao">Cessão de direitos ㅤㅤ|</label>
 										</div>
 										<div class="checkbox-inline">
-											<input type="checkbox" id="Divulgacao" name="Divulgacao">
-											<label for="Divulgacao">Material de Divulgação ㅤ|</label>
+											<input type="checkbox" id="Material" name="Material">
+											<label for="Material">Material de Divulgação ㅤ|</label>
 										</div>
 										<br>
 									</div>
 								</div>
 								<div class="form-group row">
 									<div class="col-md-6">
-										<div id="campo-divulgacao" style="display: none;">
-											<label for="campoDivulgacao">Listar Materiais de Divulgação:</label>
-											<input type="text" class="form-control" name="campoDivulgacao"
-												id="campoDivulgacao" placeholder="Informe os detalhes">
+										<div id="campo-divulg">
+											<label for="campoDivulg">Listar Materiais de Apoio:</label>
+											<input type="text" class="form-control" name="campoDivulg" id="campoDivulg"
+												placeholder="Informe os detalhes do material de Divulgação">
 										</div>
 									</div>
 									<div class="col-md-6">
-										<div id="campo-apoio" style="display: none;">
+										<div id="campo-apoio">
 											<label for="campoApoio">Listar Materiais de Apoio:</label>
 											<input type="text" class="form-control" name="campoApoio" id="campoApoio"
 												placeholder="Informe os detalhes do material de apoio">
@@ -332,4 +332,7 @@
 	</form>
 	</div>
 </body>
+
+<script type="text/javascript" async src="./custom.js"></script>
+
 </html>

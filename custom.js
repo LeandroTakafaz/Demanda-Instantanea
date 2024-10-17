@@ -1,13 +1,18 @@
 /* Troca de Campos de Materiais */
 
 $(document).ready(function() {
-    $('#Divulgacao').change(function() {
-        $('#campo-divulgacao').toggle();
-    });
-});
+    function toggleCampo(elementoId, campoId) {
+        $('#' + elementoId).change(function() {
+            $('#' + campoId).toggle();
+        });
+    }
 
-$(document).ready(function() {
-    $('#Apoio').change(function() {
-        $('#campo-apoio').toggle();
+    const elementos = [
+        { elemento: 'Apoio', campo: 'campo-apoio' },
+        { elemento: 'Material', campo: 'campo-divulg' }
+    ];
+
+    elementos.forEach(item => {
+        toggleCampo(item.elemento, item.campo);
     });
 });

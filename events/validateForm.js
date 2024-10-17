@@ -51,10 +51,33 @@ function validateForm(form){
         if(form.getValue("programaSolucao") == "") {
 			errors.push("Campo Conteúdo Programático não foi preenchido")
 		}
-        if(form.getValue("Eventos") == "" && form.getValue("Coffee") == "" && form.getValue("Logo") == "" && form.getValue("Jornada") == ""
-        && form.getValue("Estrategia") == "" && form.getValue("Imprensa") == "" && form.getValue("Grafica") == "" && form.getValue("Cobertura") == "" && form.getValue("Outros") == "") {
+        if(form.getValue("Ficha") == "" && form.getValue("Vendas") == "" && form.getValue("Livro") == "" && form.getValue("Apoio") == ""
+        && form.getValue("Video") == "" && form.getValue("Manual") == "" && form.getValue("Arquivo") == "" && form.getValue("Slides") == ""
+		&& form.getValue("Plano") == "" && form.getValue("Cessao") == "" && form.getValue("Material") == "") {
            errors.push("Nenhuma das Caixas preenchidas")
        }
+
+	   if(form.getValue("campoDivulgacao") == "") {
+			errors.push("Campo Listar Materiais de Divulgação não foi preenchido")
+	   }
+	   if(form.getValue("campoApoio") == "") {
+		errors.push("Campo Listar Materiais de Apoio não foi preenchido")
+	   }
+	   if(form.getValue("programaSolucao") == "") {
+		errors.push("Campo Conteúdo Programático não foi preenchido")
+	   }	
+   	   if(form.getValue("programaSolucao") == "") {
+			errors.push("Campo Conteúdo Programático não foi preenchido")
+	   }
+	   if(form.getValue("programaSolucao") == "") {
+		errors.push("Campo Conteúdo Programático não foi preenchido")
+       }
+	   if(form.getValue("programaSolucao") == "") {
+		errors.push("Campo Conteúdo Programático não foi preenchido")
+       }
+	   if(form.getValue("programaSolucao") == "") {
+		errors.push("Campo Conteúdo Programático não foi preenchido")
+	   }	
     }    
 
     if (errors.length > 0) {
