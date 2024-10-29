@@ -13,6 +13,12 @@
 	<div class="fluig-style-guide">
 		<form name="form" role="form">
 
+			<input type="hidden" name="hd_numSuperior" id="numSuperior">
+			<input type="hidden" name="hdn_lastState" id="hdn_lastState">
+			<input type="hidden" name="hdn_State" id="hdn_State">
+			<input type="hidden" name="hdn_diretoria" id="hdn_diretoria">
+			<input type="hidden" name="matriculaResponsavel" id="matriculaResponsavel">
+
 			<!-- Painel de Cabeçalho -->
 
 			<header>
@@ -34,10 +40,10 @@
 					<h3 class="panel-title"><i class="flaticon flaticon-person icon-md" aria-hidden="true"></i>Dados do
 						Requisitante</h3>
 				</div>
-
+<!-- 
 				<input type="hidden" name="codProjeto" id="codProjeto">
 				<input type="hidden" name="codAcao" id="codAcao">
-				<input type="hidden" name="codRecurso" id="codRecurso">
+				<input type="hidden" name="codRecurso" id="codRecurso"> -->
 
 				<div class="panel-body">
 					<div class="form-group row">
@@ -48,20 +54,16 @@
 							</select>
 						</div>
 
-						<div class="col-md-2" id="GerenteSolicita">
-							<label for="cmb_GerenteSolicitante">Gerente/Diretor</label>
+						<div class="col-md-3">
+							<label for="cmb_GerenteSolicitante">Gerente / Diretor</label>
 							<input type="text" class="form-control" name="cmb_GerenteSolicitante"
 								id="cmb_GerenteSolicitante" readonly>
 						</div>
-
-						<div class="col-md-2">
-							<label for="numProcesso">Numero da Solicitação</label>
-							<input type="text" class="form-control" name="numProcesso" id="numProcesso" readonly>
+						<div class="col-md-3">
+							<label for="txt_NumProc">Numero da Solicitação</label>
+							<input type="text" class="form-control" name="txt_NumProc" id="txt_NumProc">
 						</div>
-					</div>
-
-					<div class="form-group row">
-						<div class="col-md-3" id="UnidadeSolicita">
+						<div class="col-md-4">
 							<label for="zm_UnidadeSolicitante">Unidade Solicitante</label>
 							<input type="text" class="form-control" name="cmb_UnidadeSolicitante"
 								id="cmb_UnidadeSolicitante" readonly>
@@ -262,9 +264,10 @@
 											</lord-icon>
 											Observação:
 										</h3>
-										<p class="card-text"><strong>1:</strong>Anexar arquivos que serão necessários para a solução, caso
-											vá ser utilizado. </p>
-										<p class="card-text"><strong>2:</strong>Fazer o anexo de todos os EQUIPAMENTOS e MATERIAIS destinados para a utilização da solução, atentar-se para a quantidade de participantes e materiais necessários.</p>	
+										<p><strong>1:</strong>Fazer o Download do Documento abaixo, preenche-lo e anexar com todos os Materiais da Solução</p>
+										<p class="card-text"><strong>2:</strong>Atentar-se para a quantidade de participantes e materiais necessários.</p>
+										<br>
+										<a href="./docs/equips.docx" download="Equipamentos e Materiais.docx" class="botao-download" id="botao">Baixar Material</a>
 										<ul>
 									</div>
 									</ul>
@@ -276,6 +279,40 @@
 			</div>
 			
 			<!-- Fim do Painel Materiais para a Solução -->
+
+			<!-- Painel de Aprovações -->
+
+			<div class="panel panel-default" id="someAprov">
+				<div class="panel-heading" id="painel_aprov">
+					<h3 class="panel-title">Painel de Aprovações</h3>
+				</div>
+
+				<div class="panel-body">
+					<div class="form-group row">
+						<div class="col-md-2" id="someMenc">
+							<label for="aprovMenc">Menções Realizadas?</label>
+							<select class="form-control" name="aprovMenc" id="aprovMenc">
+								<option value="" disabled selected>Selecione uma Opção</option>
+								<option value="Sim">Sim</option>
+								<option value="Nao">Não</option>
+							</select>
+						</div>
+						
+						<div class="col-md-2" id="someMeta">
+							<label for="aprovMeta">Metas de Acordo?</label>
+							<select class="form-control" name="aprovMeta" id="aprovMeta">
+								<option value="" disabled selected>Selecione uma Opção</option>
+								<option value="Sim">Sim</option>
+								<option value="Nao">Não</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fim do Painel de Aprovações -->
+
+			<!-- Painel de Perfil do Facilitador -->
 
 			<div class="panel panel-default">
 				<div class="panel-heading" id="painel_perf">
@@ -328,11 +365,19 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="form-group">
+				<div class="col-md-10" style="text-align:left; background-color: #0070ba;">
+					<img src="./imagens/Logo_NTIC_Branca.png" title="Logo do ATIC REAL OFFICIAL" width="80" height="37">
+				</div>
+				<div class="col-md-2" style="text-align:right; background-color: #0070ba;">
+					<img src="./imagens/sebrae-branco.png" title="Logo do SEBRAE" width="80" height="37">
+				</div>
+			</div>
 	</div>
 	</form>
 	</div>
 </body>
 
-<script type="text/javascript" async src="./custom.js"></script>
-
+<script type="text/javascript" src="custom.js"></script>
 </html>
