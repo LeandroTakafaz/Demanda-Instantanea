@@ -46,10 +46,10 @@ function unidade() {
                     document.getElementById("cmb_GerenteSolicitante").value = ds_und.values[j]['NomeGerente']
                     document.getElementById("cmb_UnidadeSolicitante").value = ds_und.values[j]['NomeUnidade']
                     document.getElementById("hdn_numSuperior").value = ds_und.values[j]['Matricula']
-                    if (mat == document.getElementById("numSuperior").value) {
+/*                     if (mat == document.getElementById("numSuperior").value) {
                         document.getElementById("cmb_GerenteSolicitante").value = ds_und.values[j]['NomeSuperior']
                         document.getElementById("hdn_numSuperior").value = ds_und.values[j]['MatSuperior']
-                    }
+                    } */
                 }
             }
         }

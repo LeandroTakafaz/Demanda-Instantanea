@@ -53,3 +53,7 @@
     background-color: #0056b2;
     transform: scale(1.1);
   }
+
+  strong {
+    color: red;
+  }
